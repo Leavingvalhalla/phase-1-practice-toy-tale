@@ -69,8 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const cards = document.getElementsByClassName('card');
-  console.log(cards);
-  console.log(cards.length);
+  // console.log(cards);
+  // console.log(cards.length);
   for (let i = 0; i < cards.length; i++) {
     const likeButton = document.getElementById(i);
     const likeCount = likeButton.previousSibling;
