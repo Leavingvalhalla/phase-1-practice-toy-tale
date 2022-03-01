@@ -71,12 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const cards = document.getElementsByClassName('card');
   // console.log(cards);
   // console.log(cards.length);
-  for (let i = 0; i < cards.length; i++) {
-    const likeButton = document.getElementById(i);
-    const likeCount = likeButton.previousSibling;
-    console.log(likeCount);
-    likeButton.addEventListener('click', (e) => {
-      likeCount.value += 1;
-    });
+  for (let i = 0; i < 20; i++) {
+    if (document.getElementById(i)) {
+      const likeButton = document.getElementById(i);
+      const likeCount = likeButton.previousSibling;
+      console.log(likeCount);
+      likeButton.addEventListener('click', (e) => {
+        likeCount.value += 1;
+      });
+    }
   }
 });
